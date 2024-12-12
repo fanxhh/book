@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/lose" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="187dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_title"
+                        tools:layout_editor_absoluteX="97dp"
+                        tools:layout_editor_absoluteY="225dp" />
+
+                    <EditText
+                        android:id="@+id/edittext_shop_item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/str_title"
+                        tools:layout_editor_absoluteX="165dp"
+                        tools:layout_editor_absoluteY="217dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewAuthor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="author"
+                        tools:layout_editor_absoluteX="97dp"
+                        tools:layout_editor_absoluteY="225dp" />
+
+                    <EditText
+                        android:id="@+id/edittext_book_item_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/str_author"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        tools:layout_editor_absoluteX="165dp"
+                        tools:layout_editor_absoluteY="217dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_item_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        tools:layout_editor_absoluteX="97dp"
+                        tools:layout_editor_absoluteY="225dp" />
+
+                    <EditText
+                        android:id="@+id/edittext_book_item_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/str_date"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                        tools:layout_editor_absoluteX="165dp"
+                        tools:layout_editor_absoluteY="217dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_ok"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ok"></Button>
+
+                    <Button
+                        android:id="@+id/button_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"></Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blueviolet"
+                android:text="Details"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="74dp"
+                        android:layout_height="36dp"
+                        app:srcCompat="@drawable/label_law" />
+
+                    <TextView
+                        android:id="@+id/Lab"
+                        android:layout_width="80dp"
+                        android:layout_height="31dp"
+                        android:layout_weight="1"
+                        android:text="Lab"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/book"
+                        android:layout_width="35dp"
+                        android:layout_height="34dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/label_book" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="313dp"
+                        android:layout_height="33dp"
+                        android:layout_weight="1"
+                        android:text="bookshelf" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

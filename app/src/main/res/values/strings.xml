@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+    <string name="string_chinese">Chinese</string>
+    <string name="string_english">English</string>
+
+    <string name="confirmation">Confirmation</string>
+    <string name="sure_to_delete">Are you sure to delete this item</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="str_author">Author</string>
+    <string name="str_title">Title</string>
+    <string name="str_date">Date</string>
+    <string name="add" />
+    <string name="Sliding_Menu">滑动菜单</string>
+
+    <string-array name="fictions_array">
+        <item>All</item>
+        <item>现当代文学</item>
+        <item>言情小说</item>
+        <item>悬疑小说</item>
+
+    </string-array>
+
+    <!-- 圆形图片 -->
+    <style name="circleImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+</resources>

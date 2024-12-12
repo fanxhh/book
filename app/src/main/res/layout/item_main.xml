@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageview_item_image"
+            android:layout_width="202dp"
+            android:layout_height="137dp"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"></TextView>
+            <!--将字体适当加粗   改变字号
+   #ff000000 此为16进制颜色代码，前2位ff为透明度，后6位为颜色值 可以去博客上搜索 复制到color.xml中-->
+
+            <TextView
+                android:id="@+id/textview_item_author"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/purple_700"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textview_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/brown"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

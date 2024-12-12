@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    &lt;!&ndash;滑动菜单布局&ndash;&gt;-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--https://developer.android.google.cn/guide/topics/ui/floating-action-button?hl=zh-cn官方文档 悬浮操作钮-->
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <!--滑动导航视图-->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+    <LinearLayout
+        android:layout_width="298dp"
+        android:layout_height="30dp"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            app:navigationIcon="@drawable/icon_menu" />
+        <!--        https://www.jianshu.com/p/59104df516b0 icon_menu 就是利用Android vector标签 PathData 画图-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="MyLibrary"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"></TextView>
+
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:onClick="loadScanKitBtnClick"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="扫一扫" />
+
+
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="15dp"
+        android:src="@drawable/label_creat_new"
+        app:backgroundTint="@color/red">
+
+    </com.getbase.floatingactionbutton.FloatingActionButton>
+<!--        app:backgroundTint="@color/red"-->
+<!--        app:borderWidth="0dp"-->
+<!--        app:elevation="5dp"-->
+<!--        app:fabSize="normal"-->
+<!--        app:pressedTranslationZ="12dp"-->
+<!--        app:rippleColor="#cccccc" />-->
+
+
+
+</FrameLayout>
+
